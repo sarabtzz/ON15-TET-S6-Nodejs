@@ -152,6 +152,8 @@ const obj = [{
 
 for (let i = 0; i <obj.length; i++){
     let colors = obj[i]
+    console.log (colors)
+    
     for (chave in colors){
         console.log(`&{chave} RGB ${colors[chave]}`)
     }
