@@ -75,3 +75,17 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+for (let i = 0; i <obj.length; i++){
+    const filme = obj[i];
+    console.log(filme.Title);
+    console.log(filme.Year);
+
+    let genero = filme.Genre(",")
+    for (let j=0; j< genero.length; j++) {
+        console.log(genero[j]);
+    }
+
+}
+/*referencias https://www.devmedia.com.br/criando-uma-lista-generica-de-objetos-no-javascript/25564
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for*/

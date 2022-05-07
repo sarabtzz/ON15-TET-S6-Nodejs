@@ -5732,3 +5732,37 @@ const estados = [
         ]
       }
     ]
+
+    //Para ser bem sincera, estava com dificuldades de fazer o exercício, por não ter conseguido me dedicar essa semana, então contei com a ajuda das minhas colegas.
+
+    function listaDeCidades (cidade) {
+       const buscarMunicipios = estados.filter(({sigla}) => sigla == cidade.toUpperCase);
+     
+  for (let i of buscarMunicipios) { 
+    let cidades = i.cidades
+
+  console.log(cidades);
+  }
+
+  buscarMunicipios("RJ");
+
+
+
+    /*
+
+    function buscarLista(sigla){
+      for (let index = 0; index < estados.length; index ++) {
+      const mostrarCidades = estados[index];
+
+      if (mostrarCidades.sigla == sigla) {
+        for (let j = 0; j < mostrarCidades.cidades.length; j++) {
+          console.log(mostrarCidades.cidades[j])
+        }
+      }
+      }
+      buscarLista("MG")
+      
+      tentativa falha inspirada em um site que procurei
+*/
+    
+    }
